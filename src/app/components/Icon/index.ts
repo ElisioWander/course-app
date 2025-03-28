@@ -1,8 +1,12 @@
-import { ChevronRight } from "./ChevronRight";
-import { User } from "./User";
+import { ArrowBigLeft } from "./arrowBigLeft";
+import { ChevronRight } from "./chevronRight";
+import { logIn } from "./logIn";
+import { User } from "./user";
 
 const Icon = {
   ChevronRight,
+  ArrowBigLeft,
+  logIn,
   User,
 };
 

@@ -1,5 +1,5 @@
 export function ChevronRight({
-  className = "lucide lucide-chevron-right-icon lucide-chevron-right",
+  className = "lucide lucide-chevron-right-icon lucide-chevron-right text-zinc-700 ",
 }) {
   return (
     <svg
@@ -9,9 +9,9 @@ export function ChevronRight({
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="1.25"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.25"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className={className}
     >
       <path d="m9 18 6-6-6-6" />

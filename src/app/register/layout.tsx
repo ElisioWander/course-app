@@ -40,8 +40,8 @@ export default function Layout({ children }: LayoutProps) {
           </div>
         </div>
 
-        <div className="w-full flex flex-col items-center p-4 max-w-[560px]">
-          <div className="w-full max-w-[28rem]">{children}</div>
+        <div className="w-full flex flex-col items-center p-4 max-w-[560px] overflow-auto">
+          <div className="w-full my-auto max-w-[28rem]">{children}</div>
         </div>
       </div>
     </main>

@@ -13,33 +13,37 @@ const schema = z.object({
     .string()
     .min(1, { message: "Informe o e-mail" })
     .email({ message: "Informe um e-mail válido" }),
-  password: z.string().min(7, { message: "Deve ter no mínimo 7 caracteres" }),
 });
 
-type SignInUserInterface = z.infer<typeof schema>;
+type PasswordRecoverUserInterface = z.infer<typeof schema>;
 
 export function Form() {
-  const { handleSubmit } = useForm<SignInUserInterface>({
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+    reset,
+  } = useForm<PasswordRecoverUserInterface>({
     resolver: zodResolver(schema),
   });
 
   async function onSubmit() {
-    // signIn(signInUserData);
+    reset();
   }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
-      <Input label="E-mail" type="email" autoFocus placeholder="Seu e-mail" />
-      <Input label="Senha" type="password" placeholder="Sua senha" />
-
-      <div className="text-sm mb-4">
-        <a className="bg-red-400 font-semibold cursor-pointer hover:bg-red-500">
-          Esqueci minha senha
-        </a>
-      </div>
+      <Input
+        label="E-mail"
+        type="email"
+        autoFocus
+        placeholder="Informe seu e-mail para a recuperação da senha"
+        error={errors.email}
+        {...register("email")}
+      />
 
       <Button type="submit" isLoading={false}>
-        Entrar
+        Recuperar minha senha
       </Button>
     </form>
   );

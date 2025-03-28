@@ -1,5 +1,5 @@
-export function User({
-  className = "lucide lucide-user-icon lucide-user text-zinc-700 ",
+export function logIn({
+  className = "lucide lucide-log-in-icon lucide-log-in text-zinc-700",
 }) {
   return (
     <svg
@@ -14,8 +14,9 @@ export function User({
       strokeLinejoin="round"
       className={className}
     >
-      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-      <circle cx="12" cy="7" r="4" />
+      <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+      <polyline points="10 17 15 12 10 7" />
+      <line x1="15" x2="3" y1="12" y2="12" />
     </svg>
   );
 }

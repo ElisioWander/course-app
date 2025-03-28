@@ -1,5 +1,5 @@
-export function User({
-  className = "lucide lucide-user-icon lucide-user text-zinc-700 ",
+export function ArrowBigLeft({
+  className = "lucide lucide-arrow-big-left-icon lucide-arrow-big-left text-zinc-700 ",
 }) {
   return (
     <svg
@@ -14,8 +14,7 @@ export function User({
       strokeLinejoin="round"
       className={className}
     >
-      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-      <circle cx="12" cy="7" r="4" />
+      <path d="M18 15h-6v4l-7-7 7-7v4h6v6z" />
     </svg>
   );
 }

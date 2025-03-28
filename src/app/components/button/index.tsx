@@ -20,7 +20,7 @@ export function Button(props: ButtonProps) {
       type={type}
       disabled={disabled || isLoading}
       {...rest}
-      className="w-full flex items-center justify-center gap-2 p-4 font-bold text-sm cursor-pointer rounded-lg border-solid border-transparent
+      className="w-full flex items-center justify-center gap-2 p-4 font-bold text-sm text-white cursor-pointer rounded-lg border-solid border-transparent
       bg-red-400 transition-all duration-200 hover:bg-red-500 disabled:cursor-not-allowed disabled:bg-red-400 disabled:opacity-80 focus:border-s focus:border-red-500"
     >
       {isLoading ? (
