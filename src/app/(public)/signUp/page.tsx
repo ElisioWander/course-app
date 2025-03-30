@@ -10,7 +10,7 @@ export default function SignUp() {
       <Header subTitle="Cadastre-se gratuitamente" />
       <Form />
 
-      <CardButton.Root asLink href="/register/signIn">
+      <CardButton.Root asLink href="/signIn">
         <Icon.logIn />
         <CardButton.Text>
           Já possui uma conta?

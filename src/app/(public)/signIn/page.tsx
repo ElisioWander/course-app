@@ -1,6 +1,7 @@
-import Icon from "@/app/components/Icon";
-import { Form } from "./form";
 import CardButton from "@/app/components/cardButton";
+import Icon from "@/app/components/Icon";
+
+import { Form } from "./form";
 import { Header } from "../header";
 
 export default function SignIn() {
@@ -9,7 +10,7 @@ export default function SignIn() {
       <Header subTitle="Acesse sua conta" />
       <Form />
 
-      <CardButton.Root asLink href="/register/signUp">
+      <CardButton.Root asLink href="/signUp">
         <Icon.User className="text-zinc-700" />
 
         <CardButton.Text>

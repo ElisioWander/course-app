@@ -34,9 +34,7 @@ export function Form() {
       <Input label="Senha" type="password" placeholder="Sua senha" />
 
       <div className="text-sm mb-4">
-        <LinkButton href="/register/password-recover">
-          Esqueci minha senha
-        </LinkButton>
+        <LinkButton href="/password-recover">Esqueci minha senha</LinkButton>
       </div>
 
       <Button type="submit" isLoading={false}>
