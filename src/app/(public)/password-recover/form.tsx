@@ -34,7 +34,6 @@ export function Form() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
       <Input
-        label="E-mail"
         type="email"
         autoFocus
         placeholder="Informe seu e-mail para a recuperação da senha"

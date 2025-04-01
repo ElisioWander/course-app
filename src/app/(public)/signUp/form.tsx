@@ -42,7 +42,6 @@ export function Form() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
       <Input
-        label="E-mail"
         type="email"
         placeholder="Seu e-mail"
         autoFocus
@@ -50,14 +49,12 @@ export function Form() {
         {...register("email")}
       />
       <Input
-        label="Senha"
         type="password"
         placeholder="Deve ter no mínimo 7 caracteres"
         error={errors.password}
         {...register("password")}
       />
       <Input
-        label="Confirme sua senha"
         type="password"
         placeholder="Deve ter no mínimo 7 caracteres"
         error={errors.passwordConfirmation}

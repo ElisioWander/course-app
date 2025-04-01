@@ -25,10 +25,7 @@ export function Card() {
                 <p className="text-sm text-zinc-500 ">Nome do Instrutor</p>
               </div>
               <div className="w-full mt-4 ">
-                <div>
-                  <div className="bg-green-400 text-xs h-1 font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" />
-                  <p className="text-sm mt-1 ">100% concluído</p>
-                </div>
+                <strong className="text-base mt-1 ">RS19,90</strong>
               </div>
             </div>
           </div>

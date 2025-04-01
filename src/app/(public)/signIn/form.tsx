@@ -4,10 +4,10 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
 import { Button } from "@/app/components/button";
-import { Input } from "@/app/components/input";
 
 import { z } from "zod";
 import { LinkButton } from "@/app/components/linkButton";
+import { Input } from "@/app/components/input";
 
 const schema = z.object({
   email: z
@@ -30,8 +30,8 @@ export function Form() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4 ">
-      <Input label="E-mail" type="email" autoFocus placeholder="Seu e-mail" />
-      <Input label="Senha" type="password" placeholder="Sua senha" />
+      <Input type="email" autoFocus placeholder="Seu e-mail" />
+      <Input type="password" placeholder="Sua senha" />
 
       <div className="text-sm mb-4">
         <LinkButton href="/password-recover">Esqueci minha senha</LinkButton>
