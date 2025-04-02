@@ -3,7 +3,7 @@ import Link from "next/link";
 export function Card() {
   return (
     <div>
-      <Link href="" className="flex flex-col items-center">
+      <Link href="/course" className="flex flex-col items-center">
         <div className="w-full flex flex-col border border-gray-300 rounded-lg cursor-pointer bg-white transition-all duration-200 md:hover:scale-105 hover:shadow-lg">
           <div className="w-full h-[200px] text-center border-b border-gray-300 bg-zinc-300 ">
             {/* <img
