@@ -11,7 +11,7 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="w-full max-w-[1280px] m-auto min-h-screen">
+    <div className="flex flex-col h-screen text-gray-100 font-default">
       <Appbar.Root>
         <Appbar.Content>
           <Logo />
@@ -22,25 +22,31 @@ export default function Layout({ children }: LayoutProps) {
           </Navbar.Root>
         </Appbar.Content>
       </Appbar.Root>
-      {children}
-      <BottomNavigation.Root>
-        <BottomNavigation.Item
-          label="Dashboard"
-          href="/dashboard"
-          icon={<Icon.LayoutDashboard />}
-        />
-        <BottomNavigation.Item
-          label="Cursos"
-          href="/courses"
-          icon={<Icon.BookOpen />}
-        />
-        <BottomNavigation.Item
-          label="Aprendizado"
-          href="learning"
-          icon={<Icon.Route />}
-        />
-        <BottomNavigation.Item href="" label="Todos" icon={<Icon.Ellipsis />} />
-      </BottomNavigation.Root>
+      <div className="flex flex-1 overflow-hidden">
+        {children}
+        <BottomNavigation.Root>
+          <BottomNavigation.Item
+            label="Dashboard"
+            href="/dashboard"
+            icon={<Icon.LayoutDashboard />}
+          />
+          <BottomNavigation.Item
+            label="Cursos"
+            href="/courses"
+            icon={<Icon.BookOpen />}
+          />
+          <BottomNavigation.Item
+            label="Aprendizado"
+            href="learning"
+            icon={<Icon.Route />}
+          />
+          <BottomNavigation.Item
+            href=""
+            label="Todos"
+            icon={<Icon.Ellipsis />}
+          />
+        </BottomNavigation.Root>
+      </div>
     </div>
   );
 }

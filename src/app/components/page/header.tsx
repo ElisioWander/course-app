@@ -7,7 +7,7 @@ type HeaderProps = HTMLAttributes<HTMLDivElement> & {
 export function Header({ children, className, ...rest }: HeaderProps) {
   return (
     <header
-      className={`fixed left-0 right-0 top-20 py-4 px-5 border-b border-gray-200 ${className}`}
+      className={`bg-gray-900 border-b border-b-gray-700 h-auto md:h-16 flex items-center py-3 md:py-4 px-4 md:px-5 ${className}`}
       {...rest}
     >
       {children}

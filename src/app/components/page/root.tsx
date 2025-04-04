@@ -4,9 +4,9 @@ type PageContainerProps = HTMLAttributes<HTMLDivElement> & {
   children: ReactNode;
 };
 
-export function Root({ children }: PageContainerProps) {
+export function Root({ children, className, ...rest }: PageContainerProps) {
   return (
-    <div className="relative w-full h-full mt-20 p-4 flex flex-col">
+    <div className={`w-full h-full flex flex-col ${className}`} {...rest}>
       {children}
     </div>
   );

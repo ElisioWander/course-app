@@ -6,7 +6,7 @@ type PageContainerProps = HTMLAttributes<HTMLDivElement> & {
 
 export function PageContainer({ children }: PageContainerProps) {
   return (
-    <div className="relative w-full h-full mt-20 p-4 flex flex-col">
+    <div className="relative w-full h-full mt-20 p-6 flex flex-col">
       {children}
     </div>
   );

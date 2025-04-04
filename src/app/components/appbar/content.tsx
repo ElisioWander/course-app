@@ -6,7 +6,7 @@ type ContentProps = {
 
 export function Content({ children }: ContentProps) {
   return (
-    <main className="w-full px-4 h-full max-w-[1280px] m-auto flex items-center justify-between">
+    <main className="w-full px-6 h-full m-auto flex items-center justify-between">
       {children}
     </main>
   );
