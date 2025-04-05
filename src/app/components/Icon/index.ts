@@ -7,6 +7,7 @@ import { Search } from "./search";
 import { IRoute } from "./iroute";
 import { logIn } from "./logIn";
 import { House } from "./house";
+import { Video } from "./video";
 import { User } from "./user";
 
 const Icon = {
@@ -19,6 +20,7 @@ const Icon = {
   Search,
   House,
   logIn,
+  Video,
   User,
 };
 

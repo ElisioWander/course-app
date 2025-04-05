@@ -22,31 +22,27 @@ export default function Layout({ children }: LayoutProps) {
           </Navbar.Root>
         </Appbar.Content>
       </Appbar.Root>
-      <div className="flex flex-1 overflow-hidden">
-        {children}
-        <BottomNavigation.Root>
-          <BottomNavigation.Item
-            label="Dashboard"
-            href="/dashboard"
-            icon={<Icon.LayoutDashboard />}
-          />
-          <BottomNavigation.Item
-            label="Cursos"
-            href="/courses"
-            icon={<Icon.BookOpen />}
-          />
-          <BottomNavigation.Item
-            label="Aprendizado"
-            href="learning"
-            icon={<Icon.Route />}
-          />
-          <BottomNavigation.Item
-            href=""
-            label="Todos"
-            icon={<Icon.Ellipsis />}
-          />
-        </BottomNavigation.Root>
-      </div>
+
+      <div className="flex flex-1 overflow-hidden">{children}</div>
+
+      <BottomNavigation.Root>
+        <BottomNavigation.Item
+          label="Dashboard"
+          href="/dashboard"
+          icon={<Icon.LayoutDashboard />}
+        />
+        <BottomNavigation.Item
+          label="Cursos"
+          href="/courses"
+          icon={<Icon.BookOpen />}
+        />
+        <BottomNavigation.Item
+          label="Aprendizado"
+          href="learning"
+          icon={<Icon.Route />}
+        />
+        <BottomNavigation.Item href="" label="Todos" icon={<Icon.Ellipsis />} />
+      </BottomNavigation.Root>
     </div>
   );
 }

@@ -21,7 +21,7 @@ export function Item({
       {href ? (
         <Link
           href={href || "#"}
-          className="inline-flex gap-1 items-center text-sm font-medium text-zinc-900 hover:text-black"
+          className="inline-flex gap-1 items-center text-md md:text-sm font-medium text-zinc-900 hover:text-black"
           {...rest}
         >
           {icon &&
@@ -31,7 +31,7 @@ export function Item({
           {label}
         </Link>
       ) : (
-        <span className="text-sm font-medium hover:cursor-default text-zinc-500 ">
+        <span className="text-md md:text-sm font-medium hover:cursor-default text-zinc-500 ">
           {label}
         </span>
       )}
