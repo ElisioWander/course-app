@@ -11,7 +11,7 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="flex flex-col h-screen text-gray-100 font-default">
+    <div className="flex flex-col h-screen font-default">
       <Appbar.Root>
         <Appbar.Content>
           <Logo />

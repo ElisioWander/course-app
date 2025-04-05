@@ -1,13 +1,13 @@
-import { PageContainer } from "@/app/components/pageContainer";
 import { Card } from "./components/card";
 import { Input } from "@/app/components/input";
 import Icon from "@/app/components/Icon";
 import { LinkButton } from "@/app/components/linkButton";
+import { Page } from "@/app/components/page";
 
 export default function Dashboard() {
   return (
-    <PageContainer>
-      <main className="w-full h-full flex flex-col gap-12 ">
+    <Page.Root>
+      <main className="flex flex-col gap-12">
         <div className="w-full max-w-[478px] m-auto ">
           <Input placeholder="Pesquisar por curso" icon={<Icon.Search />} />
         </div>
@@ -63,6 +63,6 @@ export default function Dashboard() {
           </div>
         </section>
       </main>
-    </PageContainer>
+    </Page.Root>
   );
 }
