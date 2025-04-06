@@ -139,6 +139,7 @@ export default function Course() {
                 icon={<Icon.House />}
               />
               <Breadcrumb.Item href="/courses" label="Cursos" />
+              <Breadcrumb.Item href="/course-overview" label="Visão Geral" />
               <Breadcrumb.Item label="Cursos de ..." rightBar={false} />
             </Breadcrumb.Root>
           </Page.Header>
