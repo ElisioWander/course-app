@@ -4,12 +4,18 @@ import Link, { LinkProps } from "next/link";
 type LinkButtonProps = LinkProps & {
   endIcon?: ReactElement;
   children: ReactNode;
+  className?: string;
 };
 
-export function LinkButton({ endIcon, children, ...rest }: LinkButtonProps) {
+export function LinkButton({
+  endIcon,
+  children,
+  className = "",
+  ...rest
+}: LinkButtonProps) {
   return (
     <Link
-      className="flex items-center gap-1 text-red-300 cursor-pointer hover:text-red-400 transition-colors duration-200"
+      className={`flex items-center gap-1 text-green-400 cursor-pointer hover:underline hover:text-green-500 transition-colors duration-200 ${className}`}
       {...rest}
     >
       {children}

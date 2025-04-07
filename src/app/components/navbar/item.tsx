@@ -16,7 +16,7 @@ export function Item({ label, href, ...rest }: ItemProps) {
       hover:text-zinc-900 text-sm lg:text-[1rem] transition-all duration-200
       ${
         pathname === href
-          ? "font-semibold after:content-[''] after:absolute after:w-full after:h-[3px] after:bg-red-400 after:bottom-0 after:left-0 after:rounded-t-sm"
+          ? "font-semibold after:content-[''] after:absolute after:w-full after:h-[3px] after:bg-green-400 after:bottom-0 after:left-0 after:rounded-t-sm"
           : "text-zinc-700"
       }
       `}

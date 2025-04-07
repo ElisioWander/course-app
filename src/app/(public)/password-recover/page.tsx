@@ -10,7 +10,12 @@ export default function PasswordRecover() {
       <Header subTitle="Esqueci minha senha" />
       <Form />
 
-      <CardButton.Root asLink href="/signIn">
+      <CardButton.Root
+        asLink
+        href="/signIn"
+        variant="outlined"
+        className="mt-4"
+      >
         <Icon.ArrowBigLeft />
         <CardButton.Text className="text-center">
           Voltar para o login

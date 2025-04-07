@@ -1,18 +1,21 @@
 import { Box } from "@/app/components/Box";
 import Icon from "@/app/components/Icon";
-import { DetailsCardInfo } from "./DetailsCardInfo";
+
+import { DetailsCardInfo } from "./detailsCardInfo";
 
 export function Details() {
   return (
     <Box.Root>
-      <Box.Header>Outras Informações</Box.Header>
+      <Box.Header>
+        <Box.Title>Outras Informações</Box.Title>
+      </Box.Header>
 
       <Box.Content>
         <div className="grid grid-flow-row grid-cols-1 items-start gap-3 self-stretch sm:grid-cols-2">
           <DetailsCardInfo
             title="Quantidade de aulas"
             subTitle="50"
-            icon={<Icon.Time />}
+            icon={<Icon.Video />}
           />
           <DetailsCardInfo
             title="Horas de Vídeo"

@@ -8,7 +8,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <main>
       <div className="flex h-screen bg-white ">
-        <div className="w-full bg-red-200 flex justify-center items-center">
+        <div className="hidden w-full bg-green-200 md:flex justify-center items-center">
           <div className="w-[8rem] h-[8rem] bg-white rounded-[50%] flex justify-center items-center ">
             <svg
               className="w-[6rem] h-[6rem] "
@@ -40,7 +40,7 @@ export default function Layout({ children }: LayoutProps) {
           </div>
         </div>
 
-        <div className="w-full flex flex-col items-center p-4 max-w-[560px] overflow-auto">
+        <div className="w-full flex flex-col items-center m-auto p-4 max-w-[560px] overflow-auto">
           <div className="w-full my-auto max-w-[28rem]">{children}</div>
         </div>
       </div>

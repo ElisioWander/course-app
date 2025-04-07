@@ -5,12 +5,26 @@ import Link from "next/link";
 type RootProps = {
   asLink?: boolean;
   href?: Url;
+  variant?: "filled" | "outlined";
+  className?: string;
   children: ReactNode;
 };
 
-export function Root({ asLink = false, href = "#", children }: RootProps) {
+export function Root({
+  asLink = false,
+  href = "#",
+  className = "",
+  variant = "filled",
+  children,
+}: RootProps) {
   return (
-    <footer className="p-4 bg-red-50 rounded-[12px] flex items-center gap-4 cursor-pointer transition-all duration-200 hover:bg-red-100 ">
+    <footer
+      className={`p-4 ${
+        variant === "outlined"
+          ? "bg-transparent border text-gray-900 border-gray-300 hover:bg-gray-100"
+          : "bg-green-400 text-white hover:bg-green-500"
+      }  rounded-[12px] flex items-center gap-4 cursor-pointer transition-all duration-200  ${className}`}
+    >
       {asLink ? (
         <Link className="flex items-center gap-4 w-full " href={href}>
           {children}

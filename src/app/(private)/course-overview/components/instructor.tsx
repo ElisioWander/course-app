@@ -4,7 +4,9 @@ import Image from "next/image";
 export function Instructor() {
   return (
     <Box.Root>
-      <Box.Header>Instrutor</Box.Header>
+      <Box.Header>
+        <Box.Title>Instrutor</Box.Title>
+      </Box.Header>
       <Box.Content className="gap-5">
         <div className="flex items-center gap-4">
           <span className="flex justify-center items-center flex-shrink-0 bg-purpleseat-base text-zinc-900 select-none w-[3.25rem] h-12 [&+&]:-mr-4 hover:z-10 transition-all">

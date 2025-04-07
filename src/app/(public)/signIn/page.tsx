@@ -10,14 +10,14 @@ export default function SignIn() {
       <Header subTitle="Acesse sua conta" />
       <Form />
 
-      <CardButton.Root asLink href="/signUp">
-        <Icon.User className="text-zinc-700" />
+      <CardButton.Root asLink href="/signUp" variant="outlined">
+        <Icon.User />
 
         <CardButton.Text>
           Não tem uma conta?
           <CardButton.Span>Se inscreva gratuitamente</CardButton.Span>
         </CardButton.Text>
-        <Icon.ChevronRight className="text-zinc-700" />
+        <Icon.ChevronRight />
       </CardButton.Root>
     </div>
   );

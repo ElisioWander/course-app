@@ -10,7 +10,12 @@ export default function SignUp() {
       <Header subTitle="Cadastre-se gratuitamente" />
       <Form />
 
-      <CardButton.Root asLink href="/signIn">
+      <CardButton.Root
+        asLink
+        href="/signIn"
+        variant="outlined"
+        className="mt-4"
+      >
         <Icon.logIn />
         <CardButton.Text>
           Já possui uma conta?

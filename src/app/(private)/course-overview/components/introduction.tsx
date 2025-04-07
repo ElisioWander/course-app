@@ -8,9 +8,13 @@ export function Introduction() {
       <div className="group relative flex h-[200px] justify-center items-center self-stretch overflow-hidden cursor-pointer">
         {/* <img src="" alt="" className="object-cover origin-top transition-transform group-hover:scale-110" /> */}
         <div className="h-full w-full flex items-center justify-center text-white bg-black">
-          Vídeo introdutório
+          Imagem
         </div>
       </div>
+      <Box.Header className="text-xl">
+        Nome do curso
+        <p>Pequena descrição para resumir o curso</p>
+      </Box.Header>
 
       <Box.Content className="items-center gap-5">
         <Box.Paragrapth>

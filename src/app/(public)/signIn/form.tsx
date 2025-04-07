@@ -8,6 +8,7 @@ import { Button } from "@/app/components/button";
 import { z } from "zod";
 import { LinkButton } from "@/app/components/linkButton";
 import { Input } from "@/app/components/input";
+import { useRouter } from "next/navigation";
 
 const schema = z.object({
   email: z
@@ -20,6 +21,8 @@ const schema = z.object({
 type SignInUserInterface = z.infer<typeof schema>;
 
 export function Form() {
+  const { push } = useRouter();
+
   const { handleSubmit } = useForm<SignInUserInterface>({
     resolver: zodResolver(schema),
   });
@@ -34,10 +37,20 @@ export function Form() {
       <Input type="password" placeholder="Sua senha" />
 
       <div className="text-sm mb-4">
-        <LinkButton href="/password-recover">Esqueci minha senha</LinkButton>
+        <LinkButton
+          href="/password-recover"
+          className="text-zinc-900 hover:text-zinc-900"
+        >
+          Esqueci minha senha
+        </LinkButton>
       </div>
 
-      <Button type="submit" isLoading={false}>
+      <Button
+        type="submit"
+        isLoading={false}
+        className="mb-4"
+        onClick={() => push("/dashboard")}
+      >
         Entrar
       </Button>
     </form>
