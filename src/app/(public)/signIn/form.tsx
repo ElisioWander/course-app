@@ -37,12 +37,7 @@ export function Form() {
       <Input type="password" placeholder="Sua senha" />
 
       <div className="text-sm mb-4">
-        <LinkButton
-          href="/password-recover"
-          className="text-zinc-900 hover:text-zinc-900"
-        >
-          Esqueci minha senha
-        </LinkButton>
+        <LinkButton href="/password-recover">Esqueci minha senha</LinkButton>
       </div>
 
       <Button

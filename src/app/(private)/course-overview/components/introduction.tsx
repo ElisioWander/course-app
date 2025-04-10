@@ -11,9 +11,9 @@ export function Introduction() {
           Imagem
         </div>
       </div>
-      <Box.Header className="text-xl">
-        Nome do curso
-        <p>Pequena descrição para resumir o curso</p>
+      <Box.Header>
+        <Box.Title className="text-lg">Nome do curso</Box.Title>
+        <p className="text-sm">Pequena descrição para resumir o curso</p>
       </Box.Header>
 
       <Box.Content className="items-center gap-5">

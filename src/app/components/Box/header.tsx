@@ -9,10 +9,10 @@ type HeaderProps = {
 export function Header({ children, className }: HeaderProps) {
   return (
     <div
-      className={
-        (clsx("flex p-3 sm:px-8 sm:pt-7 sm:pb-2 items-center self-stretch"),
-        className)
-      }
+      className={clsx(
+        "flex flex-col p-3 md:px-8 md:py-3 items-start self-stretch border-b border-gray-200 bg-gray-100 ",
+        className
+      )}
     >
       {children}
     </div>

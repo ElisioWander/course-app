@@ -2,6 +2,7 @@ import { LayoutDashboard } from "./layoutDashboard";
 import { ArrowBigLeft } from "./arrowBigLeft";
 import { ChevronRight } from "./chevronRight";
 import { ChevronDown } from "./chevronDown";
+import { FolderOpen } from "./folderOpen";
 import { BookOpen } from "./bookOpen";
 import { Ellipsis } from "./ellipsis";
 import { Search } from "./search";
@@ -18,6 +19,7 @@ const Icon = {
   ChevronRight,
   ArrowBigLeft,
   ChevronDown,
+  FolderOpen,
   Ellipsis,
   BookOpen,
   Search,

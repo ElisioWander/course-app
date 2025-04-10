@@ -15,7 +15,7 @@ export function LinkButton({
 }: LinkButtonProps) {
   return (
     <Link
-      className={`flex items-center gap-1 text-green-400 cursor-pointer hover:underline hover:text-green-500 transition-colors duration-200 ${className}`}
+      className={`flex items-center gap-1 text-gray-900 cursor-pointer hover:underline hover:text-gray-600 transition-colors duration-200 ${className}`}
       {...rest}
     >
       {children}

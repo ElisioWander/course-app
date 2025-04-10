@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { HTMLAttributes, ReactNode } from "react";
 
 type ContentProps = HTMLAttributes<HTMLDivElement> & {
@@ -7,7 +8,10 @@ type ContentProps = HTMLAttributes<HTMLDivElement> & {
 export function Content({ children, className }: ContentProps) {
   return (
     <div
-      className={`flex flex-col p-3 sm:p-8 sm:pt-7 self-stretch ${className}`}
+      className={clsx(
+        "flex flex-col p-3 sm:p-8 sm:pt-7 self-stretch",
+        className
+      )}
     >
       {children}
     </div>

@@ -27,6 +27,11 @@ export function Details() {
             subTitle="Sim"
             icon={<Icon.Time />}
           />
+          <DetailsCardInfo
+            title="Módulos"
+            subTitle="5"
+            icon={<Icon.FolderOpen />}
+          />
         </div>
       </Box.Content>
     </Box.Root>
