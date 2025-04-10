@@ -4,6 +4,7 @@ import Icon from "@/app/components/Icon";
 import { Logo } from "@/app/components/logo";
 import { Navbar } from "@/app/components/navbar";
 import { ReactNode } from "react";
+import { Avatar } from "@/app/components/avatar";
 
 type LayoutProps = {
   children: ReactNode;
@@ -15,11 +16,14 @@ export default function Layout({ children }: LayoutProps) {
       <Appbar.Root>
         <Appbar.Content>
           <Logo />
-          <Navbar.Root>
-            <Navbar.Item label="Dashboard" href="/dashboard" />
-            <Navbar.Item label="Cursos" href="/courses" />
-            <Navbar.Item label="Aprendizado" href="/learning" />
-          </Navbar.Root>
+          <div className="flex items-center gap-4">
+            <Navbar.Root>
+              <Navbar.Item label="Dashboard" href="/dashboard" />
+              <Navbar.Item label="Cursos" href="/courses" />
+              <Navbar.Item label="Aprendizado" href="/learning" />
+            </Navbar.Root>
+            <Avatar />
+          </div>
         </Appbar.Content>
       </Appbar.Root>
 
